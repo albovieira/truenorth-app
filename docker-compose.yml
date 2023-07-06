@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build: .
+    container_name: truenorth_app
+    command: bash -c "npm install && npm run build && serve -s build -l 3000"
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_API_URL=http://ec2-34-238-119-22.compute-1.amazonaws.com:4000/v1
+    volumes:
+      - .:/app

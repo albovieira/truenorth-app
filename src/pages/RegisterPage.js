@@ -11,7 +11,7 @@ const RegisterPage = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await apiClient.post('/account/register', {
+      await apiClient.post('/account/register', {
         username,
         password,
       });

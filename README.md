@@ -35,7 +35,7 @@ The container will build the project and serve it using the "serve" package on p
 
 The project is deployed on the following URL:
 
-http://ec2-34-238-119-22.compute-1.amazonaws.com:3000
+http://test-d8ad859e.s3-website-us-east-1.amazonaws.com
 
 ## How it works?
 

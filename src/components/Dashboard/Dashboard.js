@@ -18,7 +18,7 @@ const Dashboard = () => {
         try {
             const response = await apiClient.get('/report');
 
-            const { totalRecords, spent, totalCreditsAdded, operations } = response.data;
+            const { totalRecords, spent, operations } = response.data;
 
             setTotalRecords(totalRecords || 0);
             setTotalSpent(spent || 0);

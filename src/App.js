@@ -13,6 +13,7 @@ import HomePage from './pages/HomePage';
 import RegisterPage from './pages/RegisterPage';
 
 function App() {
+  document.title = 'TrueNorth App'
   const token = localStorage.getItem('token');
   const [isLoggedIn, setIsLoggedIn] = useState(Boolean(token));
 
